@@ -1,0 +1,37 @@
+.flex-container {
+  display: flex;
+   flex-direction: row;
+
+}
+@import "compass/css3";
+
+$device-medium: 992px;
+$brand-color: white;
+$brand-background-color: #0083C1;
+$transition-delay: 0.8s;
+$base-size: 3.2em;
+$logo-size: 2em;
+
+html, body{
+  box-sizing: border-box;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  min-height: 100vh;
+}
+
+.logo {
+  transition: all $transition-delay;
+  &:hover{
+    transform: rotate(45deg);    
+    border-radius: 50%;
+  } 
+  
+  p{
+  	text-align: right;
+	font-family: ' sans-serif';
+	font-size: 25px; 
+	border-spacing: 10px 10px 10px 10px;
+	transform:rotate3d(x,y,z,10);
+  }
